@@ -6,10 +6,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/hypnoglow/helm-s3/internal/awss3"
-	"github.com/hypnoglow/helm-s3/internal/awsutil"
-	"github.com/hypnoglow/helm-s3/internal/helmutil"
-	"github.com/hypnoglow/helm-s3/internal/index"
+	"github.com/ephur/helm-s3/internal/awss3"
+	"github.com/ephur/helm-s3/internal/awsutil"
+	"github.com/ephur/helm-s3/internal/helmutil"
+	"github.com/ephur/helm-s3/internal/index"
 )
 
 type deleteAction struct {

@@ -38,6 +38,7 @@ func Session(opts ...SessionOption) (*session.Session, error) {
 			DisableSSL:       aws.Bool(disableSSL),
 			S3ForcePathStyle: aws.Bool(true),
 			Endpoint:         aws.String(os.Getenv(awsEndpoint)),
+			Region:           aws.String("us-east-1"),
 		},
 		SharedConfigState:       session.SharedConfigEnable,
 		AssumeRoleTokenProvider: StderrTokenProvider,
